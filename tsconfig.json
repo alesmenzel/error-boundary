@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ESNext",
+    "module": "ESNext",
+    // Allow JS
+    "allowJs": true,
+    "checkJs": true,
+    // Modules
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    // Strickness
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    // Declaration d.ts file
+    "declaration": true,
+    "declarationDir": "./dist/types/",
+    // Library and types
+    "lib": [
+      "ESNext",
+      "DOM",
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ]
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./coverage/",
+    "./dist/",
+  ],
+}
