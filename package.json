@@ -1,6 +1,6 @@
 {
   "name": "@alesmenzel/error-boundary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Error Boundary Component",
   "license": "MIT",
   "main": "./dist/error-boundary.js",
