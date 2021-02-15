@@ -14,9 +14,10 @@ npm install @alesmenzel/error-boundary
 function App({ name }) {
   return (
     <ErrorBoundary
-      onError={(err, info) => /* optionally, send to your favourite logger */ }
-      fallback={() => <NoAvatar />}
-      retry={[name]}
+      onError={(error, info) => /* optionally, send to your favourite logger */ }
+      fallback={({error, retry}) => <NoAvatar />}
+      // or
+      fallback={<NoAvatar />}
     >
       <Avatar name={name}/>
     </ErrorBoundary>
